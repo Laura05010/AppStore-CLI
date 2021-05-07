@@ -120,22 +120,22 @@ public class User{
      * Buys the app for the user.
      * Returns a string representation based on whether the requestBuy operation is successful
      * @param appName the app the buyer wants to buy
-     * @param sellerName the seller's name
+     * @param developerName the developer's name
      * @param buyerName the buyer's user name
      *
      * @return a string representation based on whether the requestBuy operation is successful, error otherwise.
      */
-    public String requestBuy(String appName, String sellerName, String buyerName){
-        Transaction buy = new BuyTransaction(buyerName, sellerName, appName, this.currDatabase);
+    public String requestBuy(String appName, String developerName, String buyerName){
+        Transaction buy = new BuyTransaction(buyerName, developerName, appName, this.currDatabase);
         return buy.execute();
     }
 
     /**
-     * Allows seller to request putting the app up for sale.
+     * Allows developer to request putting the app up for sale.
      * Returns a string representation based on whether the requestSell operation is successful
      * @param appName the app name
      * @param appPrice the original price of the app
-     * @param userName the seller's user name
+     * @param userName the developer's user name
      *
      * @return a string representation based on whether the requestSell operation is successful, error otherwise.
      */

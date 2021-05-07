@@ -99,12 +99,12 @@ public class Admin extends User{
      * Refunds the User and return a String representation of the operation
      *
      * @param buyerName the buyer's user name
-     * @param sellerName the seller's user name
+     * @param developerName the developer's user name
      * @param creditTransfer the credit to be refunded
      * @return a String representation of the refund operation
      */
-    public String requestRefund(String buyerName, String sellerName, double creditTransfer) {
-        Transaction refund = new RefundTransaction(buyerName, sellerName, creditTransfer, this.getDatabase());
+    public String requestRefund(String buyerName, String developerName, double creditTransfer) {
+        Transaction refund = new RefundTransaction(buyerName, developerName, creditTransfer, this.getDatabase());
         return refund.execute();
 
     }
