@@ -150,7 +150,7 @@ public class Database {
      * @param user the user that is selling the game
      * @return the App object if the user has the App for sale in their inventory, otherwise null
      */
-    public App AppsAvailable(String appName, User user) {
+    public App appsAvailable(String appName, User user) {
         if (this.allApps.containsKey(appName)) {
             App app = allApps.get(appName);
             if (app.getDeveloper() == user) {
