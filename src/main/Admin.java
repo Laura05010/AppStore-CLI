@@ -12,8 +12,8 @@ public class Admin extends User{
 
     /**
      * Constructs an Admin user that has a userName, userType and an accountBalance
-     * Includes the games that the user owns (gamesOwned), the games that the user can sell(gamesToSell), and
-     * the games that the user bought today (newPurchases)
+     * Includes the apps that the user owns (appsOwned), the apps that the user can sell(appsToSell), and
+     * the apps that the user bought today (newPurchases)
      *
      * @param userName the user name of the admin
      * @param userType the type of the user
@@ -29,7 +29,7 @@ public class Admin extends User{
     /**
      * Returns the apps that the admin owns.
      *
-     * @return the buyer's gamesOwned
+     * @return the buyer's appsOwned
      */
     @Override
     public ArrayList<App> getAppsOwned() {
@@ -37,9 +37,9 @@ public class Admin extends User{
     }
 
     /**
-     * Returns the games that of the admin sells.
+     * Returns the apps that of the admin sells.
      *
-     * @return the Admin's inventory of games for sale
+     * @return the Admin's inventory of apps for sale
      */
     @Override
     public ArrayList<App> getAppsToSell() {
@@ -47,9 +47,9 @@ public class Admin extends User{
     }
 
     /**
-     * Returns the games that the admin bought today.
+     * Returns the apps that the admin bought today.
      *
-     * @return the Admin's inventory of games bought today
+     * @return the Admin's inventory of apps bought today
      */
     @Override
     public ArrayList<App> getNewPurchases() {
@@ -110,19 +110,19 @@ public class Admin extends User{
     }
 
     /**
-     * Removes the game from a User's inventory of games owned.
+     * Removes the app from a User's inventory of apps owned.
      *
-     * @param gameName the game name
+     * @param appName the app name
      * @param ownerName the name of the owner (optional)
-     * @return the String representation of the remove game operation
+     * @return the String representation of the remove app operation
      */
     @Override
-    public String requestRemoveGame(String gameName, String ownerName){
+    public String requestRemoveApp(String appName, String ownerName){
         if (!ownerName.equals("")) {
-            Transaction removeGame = new RemoveGameTransaction(this.userName, this.currDatabase, gameName, ownerName);
+            Transaction removeApp = new RemoveAppTransaction(this.userName, this.currDatabase, appName, ownerName);
 
-            return removeGame.execute();
+            return removeApp.execute();
         }
-        return "Constraint Error: cannot remove a game that does not have an owner";
+        return "Constraint Error: cannot remove a app that does not have an owner";
     }
 }
