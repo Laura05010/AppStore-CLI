@@ -61,24 +61,24 @@ public class User{
     }
 
     /**
-     * Returns the games that the user owns.
-     * @return the user's ArrayList of gamesOwned
+     * Returns the apps that the user owns.
+     * @return the user's ArrayList of appsOwned
      */
     public ArrayList<App> getAppsOwned(){
         return new ArrayList<>();
     }
 
     /**
-     * Returns the games that of the user sells.
-     * @return the user's inventory of games for sale
+     * Returns the apps that of the user sells.
+     * @return the user's inventory of apps for sale
      */
     public ArrayList<App> getAppsToSell() {
         return new ArrayList<>();
     }
 
     /**
-     * Returns the games that the user bought today.
-     * @return the user's inventory of games bought today
+     * Returns the apps that the user bought today.
+     * @return the user's inventory of apps bought today
      */
     public ArrayList<App> getNewPurchases() {
         return new ArrayList<>();
@@ -133,8 +133,8 @@ public class User{
     /**
      * Allows seller to request putting the app up for sale.
      * Returns a string representation based on whether the requestSell operation is successful
-     * @param appName the game name
-     * @param appPrice the original price of the game
+     * @param appName the app name
+     * @param appPrice the original price of the app
      * @param userName the seller's user name
      *
      * @return a string representation based on whether the requestSell operation is successful, error otherwise.
@@ -147,8 +147,8 @@ public class User{
 
     /**
      * Allows owner to request removing the app from their inventory.
-     * Returns a string representation based on whether the requestRemoveGame operation is successful
-     * @param appName the game name
+     * Returns a string representation based on whether the requestRemoveApp operation is successful
+     * @param appName the app name
      * @param ownerName the name of the owner (optional)
      *
      * @return a string representation based on whether the requestRemoveApp operation is successful, error otherwise.
