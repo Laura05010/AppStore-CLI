@@ -139,8 +139,8 @@ public class User{
      *
      * @return a string representation based on whether the requestSell operation is successful, error otherwise.
      */
-    public String requestSell(String appName, double appPrice, String userName){
-        Transaction sell = new SellTransaction(userName, appName, appPrice, this.currDatabase);
+    public String requestSell(String appName, double appPrice, String userName, String category){
+        Transaction sell = new SellTransaction(userName, appName, appPrice, category, this.currDatabase);
 
         return sell.execute();
     }

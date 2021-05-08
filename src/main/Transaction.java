@@ -36,7 +36,7 @@ public abstract class Transaction {
      * Returns a String based on whether the App exists in the user's inventory and is not bought on the same day
      * @return a String representation if the App exists in the user's inventory and not bought on the same day, error otherwise.
      */
-    protected String AppOnTheSameDay(User owner, String AppName){
+    protected String appOnTheSameDay(User owner, String AppName){
         App currApp = null;
         boolean sameDay;
         if(!owner.getUserType().equals("BS")){
