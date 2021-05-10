@@ -121,7 +121,7 @@ public class DatabaseReadWrite extends Observable{
         Matcher userRegexMatcher = userRegexPattern.matcher(currLine);
         Pattern appInventoryRegexPattern = Pattern.compile("(3,)(.{0,15})(,)(.{0,30})(,)(.{0,15})");
         Matcher appInventoryMatcher = appInventoryRegexPattern.matcher(currLine);
-        Pattern appRegex = Pattern.compile("(2,)(.{0,30})(,)(\\d{2}.\\d{2})(,)(.{0,15})(,)(\\w+)");
+        Pattern appRegex = Pattern.compile("(2,)(.{0,30})(,)(\\d{2}.\\d{2})(,)(.{0,15})(,)(.+)");
         Matcher appRegexMatcher = appRegex.matcher(currLine);
 
         String userName;

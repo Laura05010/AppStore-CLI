@@ -6,4 +6,4 @@
 2,InstagramCopy,00.99,Junia875,Social Media
 2,The Sims 4,50.00,Liberty,Games
 2,YoutubeApp,00.99,Junia875,Music & Entertainment
-3,Hildebert,YoutubeApp,Junia875
+3,Tawnie,YoutubeApp,Junia875

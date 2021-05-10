@@ -93,7 +93,7 @@ public class WriteTransactions{
      * @return a String representation of the current state of the transaction
      */
     public String writeCreateUser(String currLine){
-        regex = "(\\d{2})(\\s)(.{0,15})(\\s+)([A+|B+|D+|S+]{0,2})(\\s)(\\d{6}\\.\\d{2})$";
+        regex = "(\\d{2})(\\s)(.{0,15})(\\s)([A+|B+|D+|S+]{0,2})(\\s)(\\d{6}\\.\\d{2})$";
         transactionElements = format(currLine, regex);
         if (checkTransactionElements(transactionElements)) {
             userName = transactionElements.get(1).replaceFirst("\\s++$", "");
@@ -229,7 +229,7 @@ public class WriteTransactions{
      * @return a String representation of the current state of the transaction
      */
     public String writeAddCredit (String currLine){
-        regex = "(\\d{2})(\\s)(.{0,15})(\\s+)([A+|B+|D+|S+]{0,2})(\\s)(\\d{6}\\.\\d{2})$";
+        regex = "(\\d{2})(\\s)(.{0,15})(\\s)([A+|B+|D+|S+]{0,2})(\\s)(\\d{6}\\.\\d{2})$";
         transactionElements = format(currLine, regex);
         if (checkTransactionElements(transactionElements)) {
             userName = transactionElements.get(1).replaceFirst("\\s++$", "");
