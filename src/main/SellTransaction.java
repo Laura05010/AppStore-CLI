@@ -59,7 +59,7 @@ public class SellTransaction extends Transaction{
             return "Constraint Error: cannot sell app as app name should be at max length of 25";
         }
         else if(price > User.MAXAPPPRICE) {
-            return "Constraint Error: cannot sell app as the max sale price must be $999.99";
+            return "Constraint Error: cannot sell app as the max sale price must be $99.99";
         }
         else if(this.database.getAllApps().containsKey(appName)){
             return "Constraint Error: cannot sell app that already exists in the platform";
@@ -68,7 +68,7 @@ public class SellTransaction extends Transaction{
         if(this.database.appsAvailable(appName,seller) != null){
             return "Constraint Error: cannot proceed sell transaction as app exists in seller's inventory";
         }
-        else if ((seller.getUserType().equals("AA") || seller.getUserType().equals("FS")) &&
+        else if ((seller.getUserType().equals("AA") || seller.getUserType().equals("BD")) &&
                 appExistsInBuyerInv(seller, appName) != null){
             return "Constraint Error: cannot proceed sell transaction as seller is attempting to sell a app that " +
                     "they brought";

@@ -56,10 +56,10 @@ public abstract class Transaction {
             sameDay = owner.getNewPurchases().contains(currApp);
         }
         if (currApp == null){
-            return "Constraint Error: cannot proceed remove App transaction as App doesn't exist in the inventory";
+            return "Constraint Error: cannot proceed remove app transaction as app doesn't exist in the inventory";
         }
         if (sameDay){
-            return "Constraint Error: cannot proceed remove App transaction as App was either brought or put on sale" +
+            return "Constraint Error: cannot proceed remove app transaction as app was either brought or put on sale" +
                     " on the same day";
         }
         return "Valid";
