@@ -1,0 +1,9 @@
+1,Junia875,DD,548798.00
+1,Tawnie,AA,526935.00
+1,Liberty,BD,001941.00
+1,Silvija,BS,000930.99
+1,Simon,BS,001443.00
+2,InstagramCopy,00.99,Junia875,Social Media
+2,The Sims 4,50.00,Liberty,Games
+2,YoutubeApp,00.99,Junia875,Music & Entertainment
+3,Hildebert,YoutubeApp,Junia875
