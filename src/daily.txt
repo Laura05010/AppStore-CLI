@@ -5,14 +5,14 @@
 08 Junia875        DD 548808.00
 00 Tawnie          AA 526935.00
 01 NewUser         BS 349478.00
-01 InvalidUSER     AA 000100.00
+01 InvalidUSER      AA 000100.00
 05 Tawnie         Junia875        000200.00
 02 Simon           BS 001443.00
 06 Liberty         BD 000010.00
 08 Tawnie          AA 527135.00
 00 Silvija         BS 000930.99
-04 TikTokApp                 Junia875         Silvija
-04 InstagramCopy             Junia875         Silvija
+04 Duolingo                       Junia875        Silvija
+04 InstagramCopy                  Junia875        Silvija
 08 Silvija         BS 000680.00
 00 Junia875        DD 548858.00
 07 YoutubeApp
