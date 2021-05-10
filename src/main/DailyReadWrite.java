@@ -73,7 +73,7 @@ public class DailyReadWrite extends Observable{
                     message = this.writeTransaction.writeAddCredit(currLine);
                     break;
                 case "07":
-                    message = this.writeTransaction.writeRemoveGame(currLine);
+                    message = this.writeTransaction.writeRemoveApp(currLine);
                     break;
                 case "08":
                     message = this.writeTransaction.writeLogOut(currLine);

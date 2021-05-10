@@ -245,13 +245,13 @@ public class WriteTransactions{
     }
 
     /**
-     * Performs the remove game transaction (08) in the system
+     * Performs the remove app transaction (07) in the system
      * and notifies the user about the state of this operation.
      *
      * @param currLine the current transaction to be processed from daily.txt
      * @return a String representation of the current state of the transaction
      */
-    public String writeRemoveGame (String currLine){
+    public String writeRemoveApp (String currLine){
         regex = "(\\d{2})(\\s)(.{0,30})(\\s)(.{0,15})(\\s)((.{0,15})?)$";
         transactionElements = format(currLine, regex);
         if (checkTransactionElements(transactionElements)) {
@@ -262,7 +262,7 @@ public class WriteTransactions{
             }
 
             if (this.currUser == null) {
-                return "Fatal Error: User isn't logged in to execute remove game transaction in daily.txt";
+                return "Fatal Error: User isn't logged in to execute remove app transaction in daily.txt";
             } else {
                 return this.database.getUser(currUser).requestRemoveApp(appName, sellerName);
             }
